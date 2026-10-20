@@ -1,0 +1,65 @@
+{
+  "migrations": [
+    {
+      "id": "c_common_bird_breath",
+      "question": "鸟类用什么呼吸？",
+      "cold_case": "C",
+      "warm_case": "A",
+      "cold_source": "llm_moe",
+      "warm_source": "kb",
+      "expected_case": "C",
+      "learned_chunks_cold": 0
+    },
+    {
+      "id": "c_geo_australia_capital",
+      "question": "澳大利亚的首都是哪里？",
+      "cold_case": "C",
+      "warm_case": "A",
+      "cold_source": "llm_moe",
+      "warm_source": "kb",
+      "expected_case": "C",
+      "learned_chunks_cold": 1
+    },
+    {
+      "id": "d_open_life_meaning",
+      "question": "人生的意义是什么？",
+      "cold_case": "D",
+      "warm_case": "B",
+      "cold_source": "unknown",
+      "warm_source": "kb_reasoned",
+      "expected_case": "D",
+      "learned_chunks_cold": 3
+    },
+    {
+      "id": "d_open_ai_ethics",
+      "question": "如何看待人工智能对就业的影响？",
+      "cold_case": "D",
+      "warm_case": "B",
+      "cold_source": "unknown",
+      "warm_source": "kb_reasoned",
+      "expected_case": "D",
+      "learned_chunks_cold": 3
+    }
+  ],
+  "migration_count": 4,
+  "cold_summary": {
+    "phase": "cold",
+    "kb_name": "controller_eval_kb_cf91625f",
+    "total": 16,
+    "case_accuracy": 1.0,
+    "source_accuracy": 1.0,
+    "case_correct": 16,
+    "source_correct": 16,
+    "learned_chunks": 14
+  },
+  "warm_summary": {
+    "phase": "warm",
+    "kb_name": "controller_eval_kb_cf91625f",
+    "total": 16,
+    "case_accuracy": 0.75,
+    "source_accuracy": 0.75,
+    "case_correct": 12,
+    "source_correct": 12,
+    "learned_chunks": 0
+  }
+}

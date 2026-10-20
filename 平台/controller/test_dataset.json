@@ -1,0 +1,130 @@
+[
+  {
+    "id": "k_geo_cn_capital",
+    "question": "中国的首都是哪里？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "geography"
+  },
+  {
+    "id": "k_hist_ww2_end",
+    "question": "第二次世界大战哪一年结束？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "history"
+  },
+  {
+    "id": "k_sci_water_formula",
+    "question": "水的化学式是什么？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "science"
+  },
+  {
+    "id": "k_lit_red_chamber_author",
+    "question": "《红楼梦》的作者是谁？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "literature"
+  },
+  {
+    "id": "k_math_sqrt_100",
+    "question": "100的平方根是多少？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "math"
+  },
+  {
+    "id": "k_cs_http_port",
+    "question": "HTTP 协议默认使用哪个端口？",
+    "expected_case": "A",
+    "expected_source": "kb",
+    "needs_kb": true,
+    "kb_topic": "computer_science"
+  },
+  {
+    "id": "k_local_linux_mac",
+    "question": "Linux 主机的 MAC 地址是多少？",
+    "expected_case": "B",
+    "expected_source": "kb_reasoned",
+    "needs_kb": true,
+    "kb_topic": "local_doc"
+  },
+  {
+    "id": "k_local_controller_version",
+    "question": "深盆科技控制机 V0.1 的架构核心是什么？",
+    "expected_case": "B",
+    "expected_source": "kb_reasoned",
+    "needs_kb": true,
+    "kb_topic": "custom_local"
+  },
+  {
+    "id": "k_local_share_path",
+    "question": "Windows 共享路径是什么？",
+    "expected_case": "B",
+    "expected_source": "kb_reasoned",
+    "needs_kb": true,
+    "kb_topic": "local_doc"
+  },
+  {
+    "id": "c_common_bird_breath",
+    "question": "鸟类用什么呼吸？",
+    "expected_case": "C",
+    "expected_source": "llm_moe",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "c_geo_australia_capital",
+    "question": "澳大利亚的首都是哪里？",
+    "expected_case": "C",
+    "expected_source": "llm_moe",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "d_future_nobel",
+    "question": "2050年诺贝尔文学奖得主是谁？",
+    "expected_case": "D",
+    "expected_source": "unknown",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "d_fake_company_planet",
+    "question": "红月集团的总部在哪个星球？",
+    "expected_case": "D",
+    "expected_source": "unknown",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "d_obscure_library_rank",
+    "question": "某小城镇图书馆2020年借阅量排名第五的书是什么？",
+    "expected_case": "D",
+    "expected_source": "unknown",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "d_open_life_meaning",
+    "question": "人生的意义是什么？",
+    "expected_case": "D",
+    "expected_source": "unknown",
+    "needs_kb": false,
+    "kb_topic": ""
+  },
+  {
+    "id": "d_open_ai_ethics",
+    "question": "如何看待人工智能对就业的影响？",
+    "expected_case": "D",
+    "expected_source": "unknown",
+    "needs_kb": false,
+    "kb_topic": ""
+  }
+]

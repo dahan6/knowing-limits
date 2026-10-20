@@ -1,0 +1,14 @@
+[Unit]
+Description=本地 RAG API 服务（OpenAI 兼容）
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/ai-training/glm-4.5-air/knowledge-base
+ExecStart=%h/ai-training/glm-4.5-air/knowledge-base/venv/bin/python api_server.py
+Restart=on-failure
+RestartSec=5
+Environment="PATH=%h/ai-training/glm-4.5-air/knowledge-base/venv/bin:/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=default.target

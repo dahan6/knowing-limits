@@ -1,0 +1,18 @@
+[Unit]
+Description=本地 AI 知识库（Gradio）
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/ai-training/glm-4.5-air/knowledge-base
+ExecStart=%h/ai-training/glm-4.5-air/knowledge-base/venv/bin/python %h/ai-training/glm-4.5-air/knowledge-base/app.py
+Restart=on-failure
+RestartSec=5
+Environment="LLM_BASE_URL=http://192.168.10.2:8080/v1"
+Environment="LLM_API_KEY=sk-local"
+Environment="LLM_MODEL=glm-4.5-air"
+Environment="KB_HOST=0.0.0.0"
+Environment="KB_PORT=7860"
+
+[Install]
+WantedBy=default.target
